@@ -1,0 +1,87 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #eef2f3; /* Soft Blue Gray */
+}
+
+/* Top Banner */
+.banner {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-bottom: 4px solid #1e3c72;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Container for Login, Register, and Home */
+.container {
+  background: white;
+  padding: 25px;
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 40px auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Add a subtle shadow effect */
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* Input Fields */
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+  outline: none;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0056b3, #004080);
+  box-shadow: 0px 4px 8px rgba(0, 91, 187, 0.3);
+}
+
+/* Links */
+p a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+p a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
