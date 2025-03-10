@@ -3,7 +3,7 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import "../App.css";  
 
-const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL = process.env.REACT_APP_API_URL;
 
 const Register = ({ setIsLoggedIn }) => {
   const [username, setUsername] = useState("");
