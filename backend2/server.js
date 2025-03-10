@@ -6,7 +6,11 @@ require("dotenv").config();  // Ensure environment variables load
 const app = express();  // ✅ Initialize `app` before using it
 
 // Middleware
-app.use(cors({ origin: "http://localhost:3001", credentials: true }));
+app.use(cors({
+  origin: ["https://quickdel-reciepes.onrender.com"], // Replace with your actual frontend Render URL
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 app.use(express.json());
 
 // Import routes
